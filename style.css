@@ -64,7 +64,7 @@ header p {
   border-radius: 1rem;
   margin-bottom: 1.5rem;
   display: inline-block;
-  width: 50%;
+  width: 100%;
   border: 1px solid #222;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   transition: transform 0.3s, border 0.3s;
