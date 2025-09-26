@@ -138,3 +138,7 @@ header p {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 16px;
 }
+img.gif {
+  max-width: 100%;   /* Make sure it doesn’t exceed its container */
+  height: auto;      /* Keep the aspect ratio */
+}
