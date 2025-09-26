@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zoe / Linn - Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <img src="yuma.jpg" alt="Profile Picture"/>
+    <h1>Zoe</h1>
+    <p>“uhm, yes?”</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-spotify"></i></a>
+    </div>
+  </header>
+
+  <!-- Masonry Grid -->
+  <main class="masonry">
+    <div class="card image" data-section="about">
+      <img src="cat.jpg" alt="About Me"/>
+      <div class="caption">About Me</div>
+    </div>
+
+    <div class="card image" data-section="interests">
+      <img src="yuma2.jpg" alt="Groups/Biases"/>
+      <div class="caption">My groups and Biases</div>
+    </div>
+
+    <div class="card image" data-section="music">
+      <img src="nicholas.jpg" alt="Silly Things about me"/>
+      <div class="caption">Random Facts</div>
+    </div>
+
+    <div class="card image" data-section="dni">
+      <img src="jay.jpg" alt="DNI"/>
+      <div class="caption">DNI</div>
+	  
+    </div>
+	  <div class="card image" data-section="favorites">
+      <img src="yeosang.jpg" alt="other-things"/>
+      <div class="caption">Other Things</div>
+    </div>
+	
+	<div clas="card image" data-section="dream">
+		<img src="mew2.gif" alt="my dream"/>
+	</div>
+	
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
