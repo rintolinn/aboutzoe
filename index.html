@@ -2,65 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zoe Profile </title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoe’s Personal Guide</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="yuma.jpg" alt="Profile Picture"/>
-    <h1>Zoe</h1>
-    <p>“I had become an accomplished clown, a child who never spoke a single truthful word.” - OSAMU DAZAI, No Longer Human</p>
-    <div class="socials">
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-spotify"></i></a>
+    <div class="title-container">
+      <div class="profile-pic">
+        <img src="yuyu.jpg" alt="Zoe profile">
+      </div>
+      <h1>Zoe’s Guidebook</h1>
     </div>
+    <p>Click on a card to learn more ✦</p>
   </header>
 
-  <!-- Masonry Grid -->
-  <div class="gif-container"></div>
-  <main class="masonry">
-    <div class="card image" data-section="about">
-      <img src="cat.jpg" alt="About Me"/>
-      <div class="caption">About Me</div>
+  <main class="grid">
+    <div class="card" data-content="about">
+      <img src="icon_1.jpg" alt="About Me">
+      <span>About Me</span>
     </div>
 
-    <div class="card image" data-section="interests">
-      <img src="yuma2.jpg" alt="Groups/Biases"/>
-      <div class="caption">My groups and Biases</div>
+    <div class="card" data-content="facts">
+      <img src="icon_2.jpg" alt="Random Facts">
+      <span>Random Facts</span>
     </div>
 
-    <div class="card image" data-section="music">
-      <img src="nicholas.jpg" alt="Silly Things about me"/>
-      <div class="caption">Random Facts</div>
+    <div class="card" data-content="favorites">
+      <img src="icon_3.jpg" alt="Favorites">
+      <span>Favorites</span>
     </div>
 
-    <div class="card image" data-section="dni">
-      <img src="jay.jpg" alt="DNI"/>
-      <div class="caption">DNI</div>
-	  
+    <div class="card" data-content="memories">
+      <img src="icon_4.jpg" alt="Memories">
+      <span>Memories</span>
     </div>
-	  <div class="card image" data-section="favorites">
-      <img src="yeosang.jpg" alt="other-things"/>
-      <div class="caption">Other Things</div>
+
+    <div class="card" data-content="projects">
+      <img src="icon_5.jpg" alt="Projects">
+      <span>Projects</span>
     </div>
-	
-	<div clas="card image" data-section="dream">
-		<img src="glaceon.gif" alt="my dream" class="gif"/>
-	</div>
-	
+
+    <div class="card" data-content="thoughts">
+      <img src="icon_6.jpg" alt="Thoughts">
+      <span>Thoughts</span>
+    </div>
   </main>
 
   <!-- Modal -->
-  <div id="modal" class="modal">
+  <div class="modal" id="modal">
     <div class="modal-content">
-      <span id="close">&times;</span>
-      <h2 id="modal-title"></h2>
-      <p id="modal-text"></p>
+      <span class="close">&times;</span>
+      <div id="modal-body"></div>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>

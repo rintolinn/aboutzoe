@@ -1,53 +1,34 @@
-// Modal elements
-const modal = document.getElementById("modal");
-const modalTitle = document.getElementById("modal-title");
-const modalText = document.getElementById("modal-text");
-const closeBtn = document.getElementById("close");
+const modal = document.getElementById('modal');
+const modalBody = document.getElementById('modal-body');
+const closeBtn = document.querySelector('.close');
 
-// Content for each card section
-const sections = {
-  about: {
-    title: "About Me",
-    text: "Zoe\n\n ENTP\n\n big love for big suki and daydream \n\n 23 years old\n\n nickname: linn / silly black cat \n pisces \n\n Greek-Romanian \n\n I speak: English, Greek, Romanian \n I can understand Japanese and Korean and I talk a bit of Spanish"
-  },
-  interests: {
-    title: "Groups and biases",
-    text: "Enhypen: Jay, Sunghoon\n\n Ateez: Yeosang, Yunho\n\n &Team: Nicholas, Yuma(if not obvious)\n\n Stray Kids: Leeknow\n\n BOYNEXTDOOR: Taesan \n\n Other groups i listen to: \n P1harmony, Xikers, Lesserafim, NMIXX, aespa, ITZY, i-dle"
-  },
-  music: {
-    title: "Random Facts",
-    text: "I play video games \n\nI listen to music 24/7 \n\n I listen to rock \n\n Studio Ghibli Movies my second addiction \n\n Pokemon addict \n\nI love literature \n\n Anime i love dearly: Fruits Basket \n\n F1 FAN \n\nOutside K-POP I spend my time in cars, especially modified cars\n\n  "
-  },
-  dni: {
-    title: "DNI",
-    text: "Basic DNI list: under 16, solo stan, argue with everything, \n doesn't accept options from others\n only bts stans or bp stans\n supports Super Junior"
-  },
-    favorites: {
-    title: "Other Things",
-    text: "Read Visual Novels: Steins;Gate and Chaos;Child \n Read: No Longer Human by Osamu Dazai \n\n Favourite songs: \nRubia - HOYOMIX \n Sailing - Aimer \n Sunsetz - CAS \n Lucifer - ENHYPEN \n Scar to Scar - &TEAM \n Big Suki -&TEAM  \n\n League of Legends Player \n\n If you play Honkai Star Rail, my UID:700060101"
-  }
+const contentData = {
+  about: "💚 About Me\n\n Hi to you; who joined my website! \n\n The name is Zoe but my nickname is Linn, \n\n I'm an ESTP. \n\n According to my calculations, my favourite song is Yukiakari. \n\n I'm half Greek, half Romanian.\n\n I'm named by friends and family members 'black silly cat'. Huge fan of Lucifer and Big Suki (i know these songs from the bottom of my heart)",
+  
+  facts: "✨ Random Facts\n\n• Born in March 5th 2002 \n\n • I play video games \n\n • I can understand Japanese and Korean \n\n • I love pokemon \n\n • I'm an F1 Fan \n\n • Outside kpop life, i care about modified cars \n\n if you play video games, let me know, really. I'll try to join yourself  so I can play with you and make you laugh. Mutuals say I talk a lot. I like teasing people, especially those who are so close to me because I love them dearly. ",
+  
+  favorites: "🎶 Favorites\n\nMusic: Rock, Alt-rock, J-pop, J-rock\nBiases:\n\n &team: Yuma, Nicholas, Euijoo, K. \n Stray Kids: Lee Know, I.N \n Ateez: Yeosang \n Boynextdoor: Taesan \n\n other groups i listen to: The Boyz, NCT, P1harmony, Xikers, NMIXX, aespa, Lesserafim",
+  
+  memories: "📸 Memories\n\n Still loading zzz... \n\n But the top three current time: \n\n • The people I meet on daily basis \n\n • When I went to Italy in 2022 \n\n • When I decided i'll go in Japan with people I had just met two weeks beforehand.",
+  
+  projects: "🧠 Projects\n\n Japan 2026 to happen. Website I'm creating for something special. \n\n My three songs i've written so far. \n See Enhypen, Stray Kids, &team and Ateez live. ",
+  
+  thoughts: "💭 Thoughts \n\n 'I had become an accomplished clown, a child who never spoke a single truthful word.' - OSAMU DAZAI, No Longer Human"
 };
 
-// Open modal with section content
-document.querySelectorAll(".card").forEach(card => {
-  card.addEventListener("click", () => {
-    const section = card.getAttribute("data-section");
-    if (sections[section]) {
-      modalTitle.textContent = sections[section].title;
-      modalText.textContent = sections[section].text;
-      modal.style.display = "flex";
-    }
+// Handle card clicks
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    const key = card.dataset.content;
+    modalBody.textContent = contentData[key]; // Use textContent so \n works
+    modal.style.display = 'flex';
   });
 });
 
-// Close modal
-closeBtn.addEventListener("click", () => {
-  modal.style.display = "none";
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
 });
 
-// Close when clicking outside modal
-window.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    modal.style.display = "none";
-  }
+window.addEventListener('click', e => {
+  if (e.target === modal) modal.style.display = 'none';
 });
