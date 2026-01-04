@@ -1,62 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zoe’s Personal Guide</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>zoe's profile</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <div class="title-container">
-      <div class="profile-pic">
-        <img src="yuyu.jpg" alt="Zoe profile">
-      </div>
-      <h1>Zoe’s Guidebook</h1>
-    </div>
-    <p>Click on a card to learn more ✦</p>
-  </header>
+  <main class="page">
+    <article class="profile-card">
 
-  <main class="grid">
-    <div class="card" data-content="about">
-      <img src="icon_1.jpg" alt="About Me">
-      <span>About Me</span>
-    </div>
+      <!-- HEADER -->
+      <header class="profile-header">
+        <img src="header2.jpg" alt="Header image" class="header-img" />
 
-    <div class="card" data-content="facts">
-      <img src="icon_2.jpg" alt="Random Facts">
-      <span>Random Facts</span>
-    </div>
+        <div class="avatar-container">
+          <img src="profile3.jpg" alt="Profile avatar" class="avatar" />
+        </div>
+      </header>
 
-    <div class="card" data-content="favorites">
-      <img src="icon_3.jpg" alt="Favorites">
-      <span>Favorites</span>
-    </div>
+      <!-- BODY -->
+      <section class="profile-body">
 
-    <div class="card" data-content="memories">
-      <img src="icon_4.jpg" alt="Memories">
-      <span>Memories</span>
-    </div>
+        <!-- TOP ROW -->
+        <div class="top-row">
+          <div class="name-block">
+            <h1>zoe</h1>
+            <p class="handle">@rintolinn</p>
+          </div>
 
-    <div class="card" data-content="projects">
-      <img src="icon_5.jpg" alt="Projects">
-      <span>Projects</span>
-    </div>
+          <button class="follow-btn following">following</button>
+        </div>
 
-    <div class="card" data-content="thoughts">
-      <img src="icon_6.jpg" alt="Thoughts">
-      <span>Thoughts</span>
-    </div>
+        <!-- INFO GRID -->
+        <div class="info-grid">
+
+          <!-- LEFT -->
+          <div class="left">
+            <p class="bio">⚝ &team pilled; enhypen and ateez love of my life.
+            <br> add seventeen as well. <br>
+            and xikers...<br>
+            yeah.</p>
+
+            <div class="section">
+              <h3>Before you follow</h3>
+              <p>i SPAM and INTERACT a lot. Feel free to dm me if you need~~</p>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="right">
+            <span class="badge">23 · she/her</span>
+
+            <div class="section">
+              <h3>DNI</h3>
+              <p>Below 17, hate on my favorites, can't take jokes seriously.</p>
+            </div>
+
+            <div class="section small">
+              <h3>I don’t follow back if</h3>
+              <p>
+                you didn’t state your age, a MINOR,
+                not interactive, or private acc. 
+                <br>sb to unfollow
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- MUSIC -->
+        <div class="music-row">
+          <iframe
+            src="https://open.spotify.com/embed/track/6NV8sZtqG9qV63z5q2dE00"
+            width="100%"
+            height="82"
+            style="border-radius:12px"
+            frameborder="0"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- CARDS -->
+        <div class="cards-grid">
+          <div class="card">
+            <h4>Other artists</h4>
+            <p>Bon Jovi, Green Day, Three Day Grace, Linkin Park, Nirvana</p>
+          </div>
+
+          <div class="card">
+            <h4>Games</h4>
+            <p>
+              Where Wind Meets, Hogwarts Legacy, Honkai Star Rail,
+              Valorant, Dead By Daylight
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="profile-footer">
+        ( Made with HTML & CSS )
+      </footer>
+
+    </article>
   </main>
-
-  <!-- Modal -->
-  <div class="modal" id="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div id="modal-body"></div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
