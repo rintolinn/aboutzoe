@@ -1,5 +1,5 @@
 :root {
-  --bg: #fdfd96;
+  --bg: #96e9fd;
   --accent: #000;
   --muted: #667085;
   --card-radius: 14px;
@@ -13,7 +13,7 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: Inter, system-ui, sans-serif;
-  background: linear-gradient(180deg, #e6e6e6, rgba(253,253,150,0.4));
+  background: linear-gradient(180deg, #e6e6e6, #6ca4be);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +134,7 @@ body {
 .badge {
   display: inline-block;
   padding: 6px 10px;
-  background: linear-gradient(90deg,#d5d578,#dada88);
+  background: linear-gradient(90deg,#96e9fd,#5b9baa);
   border-radius: 8px;
   font-weight: 700;
 }
